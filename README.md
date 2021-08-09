@@ -10,6 +10,7 @@ docker run --rm -it -p 3000:3000 -v `pwd`:/data node:16 bash
 ### Toolkit commands
 
 cf. https://docs.aws.amazon.com/cdk/latest/guide/cli.html
+cf. https://docs.aws.amazon.com/cdk/api/latest/typescript/api/index.html
 
 ```
 cdk init sample-app \
