@@ -28,6 +28,11 @@ cdk init sample-app \
 #### Deploy
 
 ```
+cdk diff \
+--profile admin-role
+```
+
+```
 cdk synth \
 --profile admin-role
 ```
