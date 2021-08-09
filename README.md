@@ -40,6 +40,6 @@ cdk deploy \
 #### Destroy
 
 ```
-cdk destroy CdkWorkshopStack \
+cdk destroy sample-app \
 --profile admin-role
 ```
