@@ -12,10 +12,20 @@ docker run --rm -it -p 3000:3000 -v `pwd`:/data node:16 bash
 cf. https://docs.aws.amazon.com/cdk/latest/guide/cli.html
 cf. https://docs.aws.amazon.com/cdk/api/latest/typescript/api/index.html
 
+#### Bootstrap (Only the first time.)
+```
+cdk bootstrap \
+--profile admin-role
+```
+
+#### Initialize
+
 ```
 cdk init sample-app \
 --language typescript
 ```
+
+#### Deploy
 
 ```
 cdk synth \
@@ -23,14 +33,11 @@ cdk synth \
 ```
 
 ```
-cdk bootstrap \
---profile admin-role
-```
-
-```
 cdk deploy \
 --profile admin-role
 ```
+
+#### Destroy
 
 ```
 cdk destroy CdkWorkshopStack \
